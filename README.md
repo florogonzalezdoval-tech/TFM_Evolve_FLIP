@@ -5,6 +5,6 @@
 - Floro Gonzalez Doval https://github.com/florogonzalezdoval-tech
 - Lucas Dios Touriñán
 - Iker Cameselle Hermida
-- Pablo
+- Pablo Rodríguez Lomba
 
 ## ESTADO: Explorando Ideas
