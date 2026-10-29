@@ -5,7 +5,7 @@
 - Florindo González Doval
 - Lucas Dios Touriñán
 - Iker Cameselle Hermida
-- Pablo
+- Pablo Rodríguez Lomba
 
 ## Idea 1
 
