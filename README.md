@@ -3,7 +3,7 @@
 # Interantes
 
 - Floro Gonzalez Doval https://github.com/florogonzalezdoval-tech
-- Lucas Dios Touriñán
+- Lucas Dios Touriñán https://github.com/lucasdios
 - Iker Cameselle Hermida https://github.com/Ikerchta
 - Pablo Rodríguez Lomba https://github.com/PabloRodriguezLomba
 
