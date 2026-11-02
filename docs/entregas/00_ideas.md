@@ -72,6 +72,61 @@ Para este producto, utilizaremos los precios de cierre de mercado de distintos �
 
 La primera versión se limitará a realizar el estudio de algunos de los principales índices, con vistas a una ampliación que abarque una mayor cantidad de activos, pasando incluso por mercados emergentes.
 
+## Idea 3
+
+### Descripción
+
+Buscamos desarrollar una herramienta de análisis y predicción del rendimiento de jugadores de la NBA mediante técnicas de Machine Learning y análisis de datos. El objetivo es utilizar información histórica y contextual de los partidos para estimar el rendimiento individual de los jugadores en diferentes apartados estadísticos, como puntos, rebotes, asistencias y triples anotados.
+
+Para ello, tendremos en cuenta factores como el rendimiento reciente de cada jugador, sus minutos de juego, el rival al que se enfrenta, el ritmo de los equipos, la condición de local o visitante y la disponibilidad de sus compañeros.
+
+Además de generar predicciones, buscamos que la herramienta permita interpretar los resultados obtenidos, identificar patrones de rendimiento y visualizar de forma sencilla qué factores pueden influir en el desempeño de un jugador.
+
+### Propuestas
+
+El desarrollo de la herramienta se plantea desde tres vertientes:
+
+- **Predicción del rendimiento individual:** desarrollo de modelos de Machine Learning capaces de estimar las principales estadísticas de un jugador en su próximo partido, utilizando información histórica y variables contextuales.
+- **Análisis de factores externos:** estudiar cómo afectan al rendimiento situaciones como las lesiones, las ausencias de compañeros, los cambios en los minutos de juego, la acumulación de partidos o las características del equipo rival.
+- **Visualización e interpretación:** creación de una interfaz interactiva que permita consultar estadísticas, comparar jugadores, visualizar tendencias y contrastar las predicciones generadas con los resultados reales.
+
+### Usuario final
+
+La herramienta estaría dirigida principalmente a aficionados al baloncesto interesados en un análisis más avanzado de las estadísticas, periodistas deportivos, creadores de contenido y profesionales relacionados con el análisis de rendimiento deportivo.
+
+Actualmente, gran parte de la información estadística disponible se presenta de forma descriptiva, mostrando lo que ha ocurrido en partidos anteriores. Nuestra propuesta pretende ir un paso más allá, utilizando dichos datos para anticipar posibles rendimientos futuros y explicar los factores que influyen en ellos.
+
+### Régimen de datos necesarios
+
+Para desarrollar este producto necesitaríamos:
+
+- Históricos de partidos de la NBA y estadísticas individuales de los jugadores.
+- Estadísticas colectivas de los equipos, tanto ofensivas como defensivas.
+- Información sobre minutos disputados, participación ofensiva y tendencias recientes de rendimiento.
+- Calendarios de partidos, días de descanso y condición de local o visitante.
+- Informes de lesiones y disponibilidad de jugadores.
+- Resultados reales de los partidos para evaluar y mejorar los modelos predictivos.
+
+### Obtención y viabilidad
+
+La propuesta parte de un proyecto personal que ya se encuentra en desarrollo y que dispone de una base de datos en PostgreSQL con información de varias temporadas de la NBA, así como de un sistema de procesamiento de datos y modelos predictivos implementados en Python.
+
+Esta base previa permitiría centrar el trabajo del máster en mejorar los modelos existentes, incorporar nuevas variables relevantes y desarrollar una interfaz que facilite la interpretación de las predicciones.
+
+La obtención de los datos se realizaría principalmente mediante fuentes estadísticas y APIs deportivas, complementadas con información oficial de la NBA.
+
+Como primera versión del producto, se plantea una aplicación que permita seleccionar un jugador y un partido, consultar sus estadísticas recientes y obtener una predicción de rendimiento acompañada de información que ayude a interpretarla.
+
+### Uso del producto
+
+Por ejemplo, un usuario podría seleccionar a un jugador que se enfrenta a un determinado equipo y consultar su rendimiento esperado en puntos, rebotes, asistencias y triples.
+
+La herramienta analizaría sus últimos partidos, el comportamiento defensivo del rival, sus minutos habituales y posibles ausencias de compañeros que puedan modificar su participación en el juego.
+
+A partir de estos datos, mostraría las predicciones generadas por los modelos junto con gráficos de evolución, comparativas históricas y los factores más relevantes que han influido en los resultados.
+
+De esta forma, el usuario no solo obtendría una estimación estadística, sino también una explicación basada en datos sobre el posible rendimiento del jugador.
+
 ### Obtención y viabilidad
 
 La experiencia previa adquirida en un TFG sobre dependencia bursátil mediante cópulas ofrece una base para abordar el análisis. El alcance limitado del MVP permite concentrar el trabajo en la calidad de los datos y en la utilidad de los resultados.
