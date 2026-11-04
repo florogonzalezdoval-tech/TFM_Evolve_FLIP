@@ -141,22 +141,22 @@ El tratamiento de estos datos lo proponemos desde 3 vertientes:
     2. Sistema de predicción de sequía: Un caso similar al anterior pero teniendo en cuenta los factores directamente inversos. Un sistema de detección de sequías y sus puntos más críticos y estimar duración.
     3. Predicción de datos erróneos: Al trabajar con datos de campo obtenidos con la frecuencia cincominutal y de manera física, podemos obtener datos erróneos tanto por el sensor, fallo de hardware, capa de enlace… Si el sistema esta preparada para saber la magnitud esperada del dato, es capaz de entender si es bueno o no. 
 
-###Usuario final
+### Usuario final
 El usuario final de estas posibles herramientas sería entidades encargadas de hacer estudios y análisis hidrológico de ríos y sus cuencas. Generalmente administraciones o empresas privadas que se dediquen a la explotación de este campo como las Confederaciones Hidrográficas de España(Miño-Sil, Guadiana, Tajo, Ebro, etc.) o Tragsa que participa en la parte de explotación de sus herramientas.
 Tendrían la ventana de aprovechar estos datos para dejar de darle un valor meramente informativo y pasar a generar nuevos productos de valor teniendo ya la materia prima.
 
 ### Régimen de datos necesarios
 Para poder explotar estas ramas necesitaríamos:
-    • Históricos de datos obtenidos con sus sistemas
-    • Informes interpretando y contextualizando estos datos
-    • Informes de situaciones de crecidas de río y sus motivos
-    • Informes de sequía-
+    - Históricos de datos obtenidos con sus sistemas
+    - Informes interpretando y contextualizando estos datos
+    - Informes de situaciones de crecidas de río y sus motivos
+    - Informes de sequía-
 
 ### Obtención
 Uno de los miembros del proyecto trabaja en el despacho de explotación del SAIH de la Confederación Hidrográfica del Miño-Sil. Teniendo permiso y capacidad de obtener mas de 20 años de datos de las bases de datos históricas e informes relacionados con los mismos.
 
 ### Uso del producto
 Vamos a proponer un supuesto por cada bloque propuesto:
-    1. Para estos sistemas de explotación de datos, la capacidad de predecir situaciones de emergencia con anterioridad podría suponer una mejora del paquete de medidas tomadas tanto en la infraestructura hidrográfica como del propio dispositivo de emergencias que soporte dicha situación.
-    2. En un verano seco y caluroso, las zonas predispuestas a la sequía podrían estar prevenidas con anterioridad sobre que fechas empezarán a tener menor disponibilidad de agua, para facilitar la gestión y empezar a hacer una gestión eficiente y responsable de recursos.
-    3. Para los operarios de análisis y explotación de los datos, un dato erróneo puede suponer una falsa alarma, horas de trabajo para la detección y el cambio, simple y llanamente por el hecho de la dimensión de datos que maneja el sistema. Un módulo capaz de comprender los datos y saber detectar cuales son erróneos y establecer un paquete de medidas para actuar en los casos supone una mejora en la calidad del servicio.
+    -Para estos sistemas de explotación de datos, la capacidad de predecir situaciones de emergencia con anterioridad podría suponer una mejora del paquete de medidas tomadas tanto en la infraestructura hidrográfica como del propio dispositivo de emergencias que soporte dicha situación.
+    - En un verano seco y caluroso, las zonas predispuestas a la sequía podrían estar prevenidas con anterioridad sobre que fechas empezarán a tener menor disponibilidad de agua, para facilitar la gestión y empezar a hacer una gestión eficiente y responsable de recursos.
+    - Para los operarios de análisis y explotación de los datos, un dato erróneo puede suponer una falsa alarma, horas de trabajo para la detección y el cambio, simple y llanamente por el hecho de la dimensión de datos que maneja el sistema. Un módulo capaz de comprender los datos y saber detectar cuales son erróneos y establecer un paquete de medidas para actuar en los casos supone una mejora en la calidad del servicio.
