@@ -112,7 +112,6 @@ Para desarrollar este producto necesitaríamos:
 La propuesta parte de un proyecto personal que ya se encuentra en desarrollo y que dispone de una base de datos en PostgreSQL con información de varias temporadas de la NBA, así como de un sistema de procesamiento de datos y modelos predictivos implementados en Python.
 
 Esta base previa permitiría centrar el trabajo del máster en mejorar los modelos existentes, incorporar nuevas variables relevantes y desarrollar una interfaz que facilite la interpretación de las predicciones.
-
 La obtención de los datos se realizaría principalmente mediante fuentes estadísticas y APIs deportivas, complementadas con información oficial de la NBA.
 
 Como primera versión del producto, se plantea una aplicación que permita seleccionar un jugador y un partido, consultar sus estadísticas recientes y obtener una predicción de rendimiento acompañada de información que ayude a interpretarla.
@@ -130,3 +129,34 @@ De esta forma, el usuario no solo obtendría una estimación estadística, sino 
 ### Obtención y viabilidad
 
 La experiencia previa adquirida en un TFG sobre dependencia bursátil mediante cópulas ofrece una base para abordar el análisis. El alcance limitado del MVP permite concentrar el trabajo en la calidad de los datos y en la utilidad de los resultados.
+
+##Idea 4
+###Descripción
+En el campo de la hidrología y el estudio de las cuencas de los ríos, existen unos sistemas desplegados para la obtención de datos con régimen cincominutal, desde estaciones remotas. Estes obtienen datos de campo simples como caudal, temperatura, volumen de lluvía y datos calculados mas complejos como caudales o niveles en aliviaderos de embalses.
+Una cantidad de datos inmensa sin explotar, unicamente utilizados para hacer estadísticas, informes y alertas en tiempo real de aviso e crecidas. Un campo con una ventana de oportunidad importante.
+
+###Propuestas
+El tratamiento de estos datos lo proponemos desde 3 vertientes:
+    1. Sistema de predicción de crecidas de ríos: En base a estudios estadísticos de tendencias, patrones y comportamientos, diseñar un sistema predictivo que pueda avisar con anterioridad la posibilidad y alertar una instancia de una crecida de un río y en que zona.
+    2. Sistema de predicción de sequía: Un caso similar al anterior pero teniendo en cuenta los factores directamente inversos. Un sistema de detección de sequías y sus puntos más críticos y estimar duración.
+    3. Predicción de datos erróneos: Al trabajar con datos de campo obtenidos con la frecuencia cincominutal y de manera física, podemos obtener datos erróneos tanto por el sensor, fallo de hardware, capa de enlace… Si el sistema esta preparada para saber la magnitud esperada del dato, es capaz de entender si es bueno o no. 
+
+###Usuario final
+El usuario final de estas posibles herramientas sería entidades encargadas de hacer estudios y análisis hidrológico de ríos y sus cuencas. Generalmente administraciones o empresas privadas que se dediquen a la explotación de este campo como las Confederaciones Hidrográficas de España(Miño-Sil, Guadiana, Tajo, Ebro, etc.) o Tragsa que participa en la parte de explotación de sus herramientas.
+Tendrían la ventana de aprovechar estos datos para dejar de darle un valor meramente informativo y pasar a generar nuevos productos de valor teniendo ya la materia prima.
+
+###Régimen de datos necesarios
+Para poder explotar estas ramas necesitaríamos:
+    • Históricos de datos obtenidos con sus sistemas
+    • Informes interpretando y contextualizando estos datos
+    • Informes de situaciones de crecidas de río y sus motivos
+    • Informes de sequía-
+
+###Obtención
+Uno de los miembros del proyecto trabaja en el despacho de explotación del SAIH de la Confederación Hidrográfica del Miño-Sil. Teniendo permiso y capacidad de obtener mas de 20 años de datos de las bases de datos históricas e informes relacionados con los mismos.
+
+###Uso del producto
+Vamos a proponer un supuesto por cada bloque propuesto:
+    1. Para estos sistemas de explotación de datos, la capacidad de predecir situaciones de emergencia con anterioridad podría suponer una mejora del paquete de medidas tomadas tanto en la infraestructura hidrográfica como del propio dispositivo de emergencias que soporte dicha situación.
+    2. En un verano seco y caluroso, las zonas predispuestas a la sequía podrían estar prevenidas con anterioridad sobre que fechas empezarán a tener menor disponibilidad de agua, para facilitar la gestión y empezar a hacer una gestión eficiente y responsable de recursos.
+    3. Para los operarios de análisis y explotación de los datos, un dato erróneo puede suponer una falsa alarma, horas de trabajo para la detección y el cambio, simple y llanamente por el hecho de la dimensión de datos que maneja el sistema. Un módulo capaz de comprender los datos y saber detectar cuales son erróneos y establecer un paquete de medidas para actuar en los casos supone una mejora en la calidad del servicio.
