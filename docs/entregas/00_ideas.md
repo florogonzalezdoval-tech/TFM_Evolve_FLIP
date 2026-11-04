@@ -147,16 +147,16 @@ Tendrían la ventana de aprovechar estos datos para dejar de darle un valor mera
 
 ### Régimen de datos necesarios
 Para poder explotar estas ramas necesitaríamos:
-    - Históricos de datos obtenidos con sus sistemas
-    - Informes interpretando y contextualizando estos datos
-    - Informes de situaciones de crecidas de río y sus motivos
-    - Informes de sequía-
+- Históricos de datos obtenidos con sus sistemas.
+- Informes interpretando y contextualizando estos datos
+- Informes de situaciones de crecidas de río y sus motivos
+- Informes de sequía 
 
 ### Obtención
 Uno de los miembros del proyecto trabaja en el despacho de explotación del SAIH de la Confederación Hidrográfica del Miño-Sil. Teniendo permiso y capacidad de obtener mas de 20 años de datos de las bases de datos históricas e informes relacionados con los mismos.
 
 ### Uso del producto
 Vamos a proponer un supuesto por cada bloque propuesto:
-    -Para estos sistemas de explotación de datos, la capacidad de predecir situaciones de emergencia con anterioridad podría suponer una mejora del paquete de medidas tomadas tanto en la infraestructura hidrográfica como del propio dispositivo de emergencias que soporte dicha situación.
-    - En un verano seco y caluroso, las zonas predispuestas a la sequía podrían estar prevenidas con anterioridad sobre que fechas empezarán a tener menor disponibilidad de agua, para facilitar la gestión y empezar a hacer una gestión eficiente y responsable de recursos.
-    - Para los operarios de análisis y explotación de los datos, un dato erróneo puede suponer una falsa alarma, horas de trabajo para la detección y el cambio, simple y llanamente por el hecho de la dimensión de datos que maneja el sistema. Un módulo capaz de comprender los datos y saber detectar cuales son erróneos y establecer un paquete de medidas para actuar en los casos supone una mejora en la calidad del servicio.
+- Para estos sistemas de explotación de datos, la capacidad de predecir situaciones de emergencia con anterioridad podría suponer una mejora del paquete de medidas tomadas tanto en la infraestructura hidrográfica como del propio dispositivo de emergencias que soporte dicha situación.
+- En un verano seco y caluroso, las zonas predispuestas a la sequía podrían estar prevenidas con anterioridad sobre que fechas empezarán a tener menor disponibilidad de agua, para facilitar la gestión y empezar a hacer una gestión eficiente y responsable de recursos.
+- Para los operarios de análisis y explotación de los datos, un dato erróneo puede suponer una falsa alarma, horas de trabajo para la detección y el cambio, simple y llanamente por el hecho de la dimensión de datos que maneja el sistema. Un módulo capaz de comprender los datos y saber detectar cuales son erróneos y establecer un paquete de medidas para actuar en los casos supone una mejora en la calidad del servicio.
