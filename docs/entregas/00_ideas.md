@@ -7,7 +7,7 @@
 - Iker Cameselle Hermida
 - Pablo Rodríguez Lomba
 
-## Idea 1
+## Idea 1: Analista de masas forestales contra incendios
 
 ### Descripción
 
@@ -53,6 +53,12 @@ Para un director técnico de extinción de un incendio, los cuales están situad
 
 En un escenario donde tenemos 2 incendios en el mismo distrito forestal. Para el técnico y el 
 jefe de distrito, encargados de la gestión y el despacho de medios y personal del mismo. Les aportaríamos una solución basada en las posibilidades, gravedad y disponibilidad de efectivos, añadiendo la recomendación de solicitar más medios en caso de que fuesen oportunos. Como medios aéreos a central o otros medios de tierra de otros distritos.
+
+### MVP
+El MVP consistiría en un entorno en el que se puedan introducir necesidades acordes a las a una o varias de las propuestas iniciales y este nos ofrezca una serie de resultados acordes a su sistema de conocimiento en base a los datos históricos. En un supuesto de que le solicitemos un informe del estado forestal del municipio de Ourense, este nos podría responder con dashboards en los que podamos visualizar mapas de calor con zonas conflictivas, zonas de mayor densidad y peligro en cuanto a disponibilidad de material o zonas con mayor dificultad de acceso a los medios de extinción o prevención.
+
+### Viabilidad
+La viabilidad va de la mano de poder conseguir información de calidad relativa a los incendios forestales de las zonas de estudio, siendo el bloque más critico dentro del campo de los datos, ya que la parte de meteorología, datos geográficos o de masas forestales es posible de adquirir de mapas de GIS con capas específicas de esto.
 
 ## Idea 2 -Análisis de dependencia entre índices bursátiles mediante funciones cópula
 
@@ -191,7 +197,7 @@ La herramienta analizaría sus estadísticas recientes, sus minutos habituales, 
 
 De esta forma, el usuario obtendría una estimación del rendimiento del jugador acompañada de información que le permita interpretarla y valorar su incertidumbre.
 
-## Idea 4
+## Idea 4: Explotador de información hidrológica
 ### Descripción
 En el campo de la hidrología y el estudio de las cuencas de los ríos, existen unos sistemas desplegados para la obtención de datos con régimen cincominutal, desde estaciones remotas. Estes obtienen datos de campo simples como caudal, temperatura, volumen de lluvía y datos calculados mas complejos como caudales o niveles en aliviaderos de embalses.
 Una cantidad de datos inmensa sin explotar, unicamente utilizados para hacer estadísticas, informes y alertas en tiempo real de aviso e crecidas. Un campo con una ventana de oportunidad importante.
@@ -221,3 +227,9 @@ Vamos a proponer un supuesto por cada bloque propuesto:
 - Para estos sistemas de explotación de datos, la capacidad de predecir situaciones de emergencia con anterioridad podría suponer una mejora del paquete de medidas tomadas tanto en la infraestructura hidrográfica como del propio dispositivo de emergencias que soporte dicha situación.
 - En un verano seco y caluroso, las zonas predispuestas a la sequía podrían estar prevenidas con anterioridad sobre que fechas empezarán a tener menor disponibilidad de agua, para facilitar la gestión y empezar a hacer una gestión eficiente y responsable de recursos.
 - Para los operarios de análisis y explotación de los datos, un dato erróneo puede suponer una falsa alarma, horas de trabajo para la detección y el cambio, simple y llanamente por el hecho de la dimensión de datos que maneja el sistema. Un módulo capaz de comprender los datos y saber detectar cuales son erróneos y establecer un paquete de medidas para actuar en los casos supone una mejora en la calidad del servicio.
+
+### MVP
+En este caso el MVP podría ser un agente conversacional que en base a las premisas impuestas o tareas programadas con el poder establecer informes de alerta con cierta periodicidad, avisos automáticos de datos incoherentes o que nos ofrezca una serie de dashboards donde se encuentran las zonas más criticas de sequía, estaciones que sería interesante tener una integridad de dato alta para el estudio de estas o un ranking de estaciones que mas fallos tienen.
+
+### Viabilidad
+La viabilidad de este producto es alta ya que la cantidad y calidad de datos obtenibles alta y la disposición es casi inmediata. EL volumen permite crear varios conjuntos de datos pudiendo realizar entrenamientos en varios niveles, con episodios ya conocidos para evaluar el funcionamiento y la rápida implantación del mismo en un sistema ya vivo
