@@ -54,23 +54,55 @@ Para un director técnico de extinción de un incendio, los cuales están situad
 En un escenario donde tenemos 2 incendios en el mismo distrito forestal. Para el técnico y el 
 jefe de distrito, encargados de la gestión y el despacho de medios y personal del mismo. Les aportaríamos una solución basada en las posibilidades, gravedad y disponibilidad de efectivos, añadiendo la recomendación de solicitar más medios en caso de que fuesen oportunos. Como medios aéreos a central o otros medios de tierra de otros distritos.
 
-## Idea 2
+## Idea 2 -Análisis de dependencia entre índices bursátiles mediante funciones cópula
 
 ### Descripción
 
-Buscamos crear una herramienta que permita seleccionar un índice bursátil y explorar el grado de dependencia financiera que presenta con otros índices, tanto en épocas de estabilidad de mercado como en momentos de caídas. Para ello, nos ayudaremos de herramientas estadísticas que nos permitan hacer un estudio de la conocida como «dependencia de colas» para poder cuantificar dicha relación. Este producto buscará facilitar la comprensión de la diversificación a la hora de realizar inversiones en bolsa.
+Buscamos desarrollar una herramienta que permita seleccionar un índice bursátil y explorar cómo se relacionan sus rentabilidades con las de otros índices. El objetivo es ayudar al usuario a identificar qué mercados han mostrado comportamientos similares y en cuáles se han observado menos caídas fuertes simultáneas.
+
+Para ello, estudiaremos tanto la dependencia general entre índices como la relación entre sus rentabilidades extremas. Utilizaremos funciones cópula para estimar esta última relación y compararemos los resultados con medidas más sencillas. El producto permitirá consultar si la clasificación de los índices cambia al pasar de una visión general a otra centrada en las caídas fuertes.
+
+### Propuestas 
+
+El desarrollo de la herramienta se plantea desde tres vertientes.
+
+Análisis de la dependencia entre mercados. A partir de los precios de cierre, calcularemos rentabilidades y compararemos cada índice con el seleccionado por el usuario. Estudiaremos por separado la dependencia general y la dependencia de colas, que describe la tendencia a registrar rentabilidades muy bajas de forma conjunta.
+
+Visualización e interpretación. Crearemos un panel con dos clasificaciones, una para la dependencia general y otra para las caídas extremas. Cada comparación mostrará el periodo analizado, el número de observaciones disponibles y una indicación de la incertidumbre, especialmente cuando haya pocos episodios extremos.
+
+Actualización y ampliación del análisis. Prepararemos un proceso que permita incorporar nuevos archivos, comprobar su calidad y recalcular los resultados. Si conseguimos históricos intradía con cobertura suficiente, ampliaremos el análisis para estudiar cómo varía la dependencia al comparar movimientos dentro de una sesión y entre cierres diarios.
 
 ### Usuario final
 
-Muchos inversores particulares con conocimientos básicos de inversión no llegan a comprender la relación que tienen los activos entre sí. Además, en este mundo observamos que los activos presentan unas relaciones de dependencia que varían en situaciones límite: dos activos pueden comportarse de forma independiente cuando el mercado es estable, pero desplomarse conjuntamente en épocas de crisis.
+La herramienta estaría dirigida principalmente a inversores particulares con conocimientos básicos de inversión que siguen varios mercados y quieren entender hasta qué punto comparten exposición. Actualmente pueden consultar gráficos de rentabilidad o tablas de correlación, pero necesitan análisis adicionales para saber si dos índices que suelen moverse de forma diferente también lo han hecho durante caídas fuertes.
 
-Nuestro producto buscará facilitar dicha información, permitiendo que comprendan de una forma más sencilla las relaciones que presentan los diferentes activos entre sí y que obtengan un mayor conocimiento de estas situaciones para poder realizar una mejor diversificación.
+El producto les ayudaría a detectar exposiciones similares y a seleccionar qué pares merece la pena estudiar con más detalle al valorar la diversificación. Los resultados se presentarían como estimaciones históricas, junto con la información necesaria para valorar su estabilidad.
 
 ### Régimen de datos necesarios
 
-Para este producto, utilizaremos los precios de cierre de mercado de distintos índices bursátiles a lo largo de un periodo delimitado.
+Para desarrollar el producto necesitaríamos los siguientes datos.
 
-La primera versión se limitará a realizar el estudio de algunos de los principales índices, con vistas a una ampliación que abarque una mayor cantidad de activos, pasando incluso por mercados emergentes.
+Series históricas de cierres diarios con fecha, índice y valor de cierre. A partir de ellas calcularemos las rentabilidades.
+
+Información sobre la divisa, el horario de negociación y el tipo de índice, incluido el tratamiento de los dividendos.
+
+Datos de tipos de cambio si incorporamos una comparación de las rentabilidades desde la perspectiva de un usuario que opera en euros.
+
+Series intradía con fecha y hora para la ampliación, siempre que dispongamos de un periodo común y podamos comparar mercados con distintos horarios.
+
+### Obtención y viabilidad
+
+Como fuentes candidatas se valorarán los proveedores oficiales de los índices y servicios de datos financieros como Alpha Vantage. Antes de cerrar la selección, comprobaremos si podemos obtener una muestra de cada índice, qué periodo comparten las series, qué coste tiene el acceso y en qué condiciones se pueden reutilizar los datos y mostrar los resultados. Documentación de datos históricos de Alpha Vantage
+
+La primera versión se limitaría a entre seis y ocho índices y un periodo común de análisis. El usuario podría elegir un índice de referencia, consultar las dos clasificaciones y abrir el detalle de un par. La experiencia previa adquirida en el TFG sobre dependencia bursátil mediante cópulas aporta una base para desarrollar el análisis. La primera comprobación estadística consistiría en evaluar si hay suficientes observaciones extremas y si los resultados se mantienen razonablemente al cambiar de periodo.
+
+Podremos construir la primera versión con datos de años anteriores. Reservaremos el tramo más reciente del histórico disponible y lo incorporaremos después como una nueva entrega. Así comprobaremos que el producto puede añadir observaciones, recalcular las estimaciones y mostrar qué relaciones han cambiado. Cuando se consigan datos actuales, se incorporarán mediante el mismo proceso.
+
+### Uso del producto
+
+Por ejemplo, una persona que ya sigue el IBEX 35 podría seleccionarlo como índice de referencia y comparar su relación histórica con el EURO STOXX 50, el S&P 500 y otros mercados incluidos en la herramienta. El panel le mostraría cuáles han tenido un comportamiento más parecido al IBEX 35 en el conjunto del periodo y con cuáles se han observado más caídas fuertes simultáneas.
+
+Si un índice aparece entre los de menor dependencia general, pero su relación con el IBEX 35 aumenta al analizar las rentabilidades más bajas, el usuario podría abrir el detalle del par para ver en qué periodos se observa ese patrón y cuántos datos lo respaldan. Al incorporar un nuevo tramo del histórico, podría repetir la consulta y comprobar si la relación se mantiene.
 
 ## Idea 3 - STATS NBA
 
