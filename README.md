@@ -8,3 +8,5 @@
 - Pablo Rodríguez Lomba https://github.com/PabloRodriguezLomba
 
 ## ESTADO: Explorando Ideas
+
+  [Ideas de proyecto](docs/entragas/00_ideas.md)
