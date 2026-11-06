@@ -9,4 +9,4 @@
 
 ## ESTADO: Explorando Ideas
 
-  [Ideas de proyecto](docs/entragas/00_ideas.md)
+  [Ideas de proyecto](docs/entregas/00_ideas.md)
