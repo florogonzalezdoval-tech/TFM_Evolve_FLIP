@@ -1,6 +1,6 @@
 # TFM_Evolve_FLIP
 
-# Interantes
+# Integrantes
 
 - Floro Gonzalez Doval https://github.com/florogonzalezdoval-tech
 - Lucas Dios Touriñán https://github.com/lucasdios
